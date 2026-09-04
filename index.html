@@ -1,29 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel ="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yorn Mengny | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1> Yorn Mengny
-        <p> Software Developer / Testing / UI/UX Designer</p>
-        </h1>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Yorn, a passionate software developer with experience in testing and UI/UX design.</p>
+    <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="https://via.placeholder.com/120x40/38bdf8/ffffff?text=YM+Logo" alt="YM Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="profile-img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVd_bXn0Y9ID6Rd11ufrxffXicMmiA42O6PrwM-nt1g&s" alt="Yorn Mengny" class="profile-img">
+      </div>
+      <h1>Yorn Mengny</h1>
+      <p class="tagline">Software Developer <span class="dot">•</span> QA Tester <span class="dot">•</span> UI/UX Designer</p>
+      <div class="social-links">
+        <a href="#"><i class="fab me-github"></i> GitHub</a>
+        <a href="#"><i class="fab me-linkedin"></i> LinkedIn</a>
+        <a href="mailto:example@email.com"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="contact" class="card">
+      <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: Description of project 1.</li>
-            <li>Project 2: Description of project 2.</li>
-            <li>Project 3: Description of project 3.</li>
-        </ul>
+    <section id="about" class="card">
     </section>
+    <section id="projects" class="card">
+    </section>
+      <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+      <p>Hello! I'm Yorn, a passionate software developer with expertise in testing and crafting intuitive UI/UX experiences. I turn complex problems into clean, functional, and visually appealing web applications.</p>
+      
+      <div class="skills">
+        <span class="skill-tag">HTML & CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">UI/UX Design</span>
+        <span class="skill-tag">QA Testing</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">AI Engineering</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkgJG1LNmkd8kGCvQ78VogPqALGO8Kd1XdwX6QKtlxA&s=10" alt="Project 1">
+          <div class="project-info">
+            <h3>Analytics Dashboard UI</h3>
+            <p>Designed and built an interactive dashboard focusing on data visualization and clean user experience.</p>
+            <div class="project-tags">
+              <span>UI/UX</span>
+              <span>CSS Grid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+          <div class="project-info">
+            <h3>Automation Test Suite</h3>
+            <p>Developed comprehensive web testing scripts ensuring system stability and high performance.</p>
+            <div class="project-tags">
+              <span>QA Testing</span>
+              <span>Selenium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Project 3">
+          <div class="project-info">
+            <h3>E-Commerce Web App</h3>
+            <p>Full responsive online store built with modern web tools and seamless checkout flows.</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
